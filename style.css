@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background-color:;
+}
+.card {
+ border-radius: 20px;
+
+}
+
+
+
+.card-1 {
+    
+    background: radial-gradient(#006db3, #29b6f6);
+    border-radius: 30px;
+    height: 270px;
+    width: 450px;
+}
+
+.cartao-frente {
+    height: 200px;
+    width: 200px;
+    perspective: 1000px; 
+  }
+  
+  .cartao-container {
+    position: relative;
+    height: 100%;
+    transition: transform .4s;
+    transform-style: preserve-3d;
+  }
+  
+  .cartao-frente:hover .cartao-container {
+    transform: rotateY(180deg);
+  }
+  
+  .cartao-front, .cartao-back {
+    position: absolute;
+    background: radial-gradient(#006db3, #29b6f6); 
+    border-radius: 30px;
+    height: 270px;
+    width: 450px;    
+    backface-visibility: hidden;
+    z-index: 1;
+  }
+  .datas {
+    display: flex;
+    justify-content: center;
+  }
+  
+    
+  
+  
+  
+  .cartao-back {
+    transform: rotateY(180deg);
+    background: radial-gradient(#006db3, #29b6f6); 
+  }
